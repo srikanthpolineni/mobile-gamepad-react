@@ -1,6 +1,6 @@
 # React Mobile browser gamepad
 
-This is a sample mobile browser gamepad developed using ReactJs and Material UI.
+This is a sample mobile browser gamepad developed using React and Material UI for.
 
 ## Prerequisite softwares
 
@@ -25,7 +25,13 @@ After react ui build is successful, run the nodejs server app.
 This will run the nodejs application on localhost, on port 3000. This server includes both http and websocket server. \
 Http serves the react ui and react ui communicates the websocket.
 
-## Access the ReactUI
+## Behind the scenes
+
+React UI uses socket.io-client library for making persistance websocket connection with server.\
+UI supports multi touch on mobile devices. Each time when some action is performed the consolidated keys state will be sent to to server over websocket.\
+Currently it supports 6 keys i.e. Up, Down, Left, Right, A and B. Each key press is stored in byte array and sent to server as decimal.
+
+## Access the React UI
 
 Get the current system IP address (using `ipconfig` command in windows or from network preferences in mac)\
 In the mobile open the browser and access the application [http://{SystemIp}:3000](http://SystemIp:3000).
@@ -54,4 +60,7 @@ Client Id=J8aZz_fICxmOQUG-AAAB, Up: 0, Down: 0, Left: 0, Right:1, A: 0, B: 0
 Client Id=J8aZz_fICxmOQUG-AAAB, Up: 0, Down: 0, Left: 0, Right:1, A: 0, B: 1
 ```
 
-**_Note: This is a proof of concept and don't include any unit tests. May contains dirty code._**
+## Notes
+
+**_UI supports ONLY tocuh actions. Mouse clicks are not implemented by design. To test on laptop use device emulation in browser developer tools._**\
+**_This is a proof of concept and don't include any unit tests. May contains dirty code._**
