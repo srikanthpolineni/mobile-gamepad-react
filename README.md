@@ -12,6 +12,8 @@ This is a sample mobile browser gamepad developed using ReactJs and Material UI.
 
 In the project directory, you can run:
 
+### `npm install`
+
 ### `npm run build`
 
 After react ui build is successful, run the nodejs server app.
