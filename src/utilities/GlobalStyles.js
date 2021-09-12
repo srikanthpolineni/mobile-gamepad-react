@@ -1,5 +1,5 @@
 import { makeStyles, createStyles } from '@material-ui/styles';
-
+/* istanbul ignore file */
 const useStyles = makeStyles(() => createStyles({
 
     '@global': {
