@@ -30,6 +30,7 @@ export default function Keypad() {
     };
 
     useEffect(() => {
+        /* istanbul ignore else*/
         if (status === CONNECTION_STATUS.CONNECTED && socket !== undefined) {
             try {
                 let byteArray = new Uint8Array(8);
