@@ -19,13 +19,4 @@ describe('TouchButton', () => {
         expect(trigger).toHaveBeenCalledTimes(2);
     });
 
-    test('Invalid trigger mapping', async () => {
-
-        debugger;
-        expect(TouchButton).toBeTruthy();
-        const trigger = {};
-        const component = mount(<TouchButton trigger={trigger} button="A">Hello</TouchButton>);
-        component.simulate('touchStart', { touches: [{ clientX: 100, clientY: 100 }] });
-        component.simulate('touchEnd', { touches: [{ clientX: 100, clientY: 100 }] });
-    });
 });

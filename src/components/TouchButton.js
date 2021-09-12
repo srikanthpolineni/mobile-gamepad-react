@@ -48,6 +48,7 @@ function TouchButton({ children, button, trigger }) {
 
     const touchStart = (e) => {
         setColor(triggerColor);
+        /* istanbul ignore else*/
         if (typeof trigger === 'function') {
             trigger({ button, status: 1 });
         }
@@ -55,6 +56,7 @@ function TouchButton({ children, button, trigger }) {
 
     const touchEnd = (e) => {
         setColor(defaultColor);
+        /* istanbul ignore else*/
         if (typeof trigger === 'function') {
             trigger({ button, status: 0 });
         }

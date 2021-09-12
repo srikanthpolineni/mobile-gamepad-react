@@ -1,6 +1,6 @@
 # React Mobile browser gamepad
 
-This is a sample mobile browser gamepad developed using React and Material UI for.
+This is a sample mobile browser gamepad developed using React and Material UI.
 
 ## Prerequisite softwares
 
@@ -62,5 +62,5 @@ Client Id=J8aZz_fICxmOQUG-AAAB, Up: 0, Down: 0, Left: 0, Right:1, A: 0, B: 1
 
 ## Notes
 
-**_UI supports ONLY tocuh actions. Mouse clicks are not implemented by design. To test on laptop use device emulation in browser developer tools._**\
-**_This is a proof of concept and don't include any unit tests. May contains dirty code._**
+**_UI supports ONLY touch actions. Mouse clicks are not implemented by design. To test on laptop use device emulation in browser developer tools._**\
+**_This is a proof of concept may contains dirty code._**
